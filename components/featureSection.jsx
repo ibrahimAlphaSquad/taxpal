@@ -27,7 +27,7 @@ function FeatureSection() {
                 <p className='text-5xl font-medium leading-none tracking-[-0.02rem]'>Everything you need to run your books.</p>
                 <p className='text-base font-normal leading-normal tracking-[-0.01rem]'>Well everything you need if you aren’t that picky about minor details like tax compliance.</p>
             </div>
-            <div className='flex flex-row ml-20 mt-20 space-x-20'>
+            <div className='flex flex-row pl-20 mt-20 w-full justify-between space-x-20'>
                 <div className='flex flex-col space-y-3'>
                     {featureList.map((_payroll, idx) => {
                         return (
@@ -38,9 +38,7 @@ function FeatureSection() {
                         )
                     })}
                 </div>
-                <div className='w-max h-max'>
-                    <Image width={787} height={528} src={'/assets/images/featureSectionPayroll.png'} alt='payroll' />
-                </div>
+                <Image width={787} height={528} src={'/assets/images/featureSectionPayroll.png'} alt='payroll' />
             </div>
         </div>
     )
