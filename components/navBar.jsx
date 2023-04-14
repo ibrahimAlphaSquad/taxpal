@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const NavBar = () => {
   return (
-    <nav className='container mx-auto flex flex-row justify-between align-middle'>
+    <nav className='flex flex-row justify-between align-middle'>
       <div className='flex flex-row space-x-14'>
         <Image className='cursor-pointer' width={109} height={40} src={'/assets/svg/navBarLogo.svg'} alt='taxpal logo' />
         <div className='flex flex-row my-3 space-x-10 justify-center align-middle'>
