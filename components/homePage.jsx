@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 function HomePage() {
     return (
-        <div className="container mx-auto">
+        <div className="container mx-auto mb-36">
             <NavBar />
             <div className='flex flex-col justify-center items-center space-y-8 my-36 mx-56'>
                 <div className='text-7xl font-bold leading-tight text-slate-900 tracking-tight h-44 max-w-4xl text-center relative'>
