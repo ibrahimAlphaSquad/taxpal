@@ -14,7 +14,7 @@ const NavBar = () => {
       </div>
       <div className='flex flex-row space-x-8'>
         <button className='text-sm font-normal leading-3 text-slate-700 cursor-pointer'>Sign in</button>
-        <button className='text-sm font-medium leading-none text-slate-900 cursor-pointer px-4 py-3 border border-slate-900 rounded-3xl hover:text-white hover:bg-blue-600 hover:border-none'>Get started today</button>
+        <button className='text-sm font-medium leading-none text-slate-900 cursor-pointer px-4 py-3 border border-slate-900 rounded-3xl hover:text-white hover:bg-blue-600 hover:border-0'>Get started today</button>
       </div>
     </nav>
   )
