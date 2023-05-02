@@ -13,3 +13,7 @@ html,
 body {
   background-color:#FFFFFF;
 }
+
+.interFont {
+  font-family: var(--inter-font);
+}
