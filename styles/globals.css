@@ -2,18 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-
 * {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
 }
 
 html,
 body {
-  background-color:#FFFFFF;
+	background-color: #ffffff;
+	scroll-behavior: smooth;
+	font-family: "Inter", sans-serif;
 }
 
-.interFont {
-  font-family: var(--inter-font);
+.inter-font {
+	font-family: "Inter", sans-serif;
+}
+
+.lexend-font {
+	font-family: 'Lexend', sans-serif;
 }
