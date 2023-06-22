@@ -22,7 +22,7 @@ function FeatureSection() {
     ]
 
     return (
-        <div className="bg-[url('/assets/svg/featureSectionBg.svg')] py-20 bg-no-repeat container mx-auto">
+        <div id='featureSection' className="bg-[url('/assets/svg/featureSectionBg.svg')] py-20 bg-no-repeat bg-cover">
             <div className='flex flex-col justify-center items-center space-y-6 text-white'>
                 <p className='text-5xl font-medium leading-none tracking-[-0.02rem]'>Everything you need to run your books.</p>
                 <p className='text-base font-normal leading-normal tracking-[-0.01rem]'>Well everything you need if you aren’t that picky about minor details like tax compliance.</p>
