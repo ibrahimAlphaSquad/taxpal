@@ -41,7 +41,7 @@ function BusinessTasks() {
                     )
                 })}
             </div>
-            <div  className=''>
+            <div className='flex justify-center items-center align-middle'>
                 <Image width={1180} height={540} src="/assets/images/profitLossInventory.png" alt="profitLossInventory" />
             </div>
         </div>
