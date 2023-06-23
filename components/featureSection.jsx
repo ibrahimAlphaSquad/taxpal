@@ -22,18 +22,18 @@ function FeatureSection() {
     ]
 
     return (
-        <div id='featureSection' className="bg-[url('/assets/svg/featureSectionBg.svg')] py-20 bg-no-repeat bg-cover">
-            <div className='flex flex-col justify-center items-center space-y-6 text-white'>
-                <p className='text-5xl font-medium leading-none tracking-[-0.02rem]'>Everything you need to run your books.</p>
-                <p className='text-base font-normal leading-normal tracking-[-0.01rem]'>Well everything you need if you aren’t that picky about minor details like tax compliance.</p>
+        <div id='featureSection' className="bg-[url('/assets/svg/featureSectionBg.svg')] py-20 bg-no-repeat bg-cover bg-center flex flex-col gap-24">
+            <div className='flex flex-col justify-center items-center gap-6 text-white'>
+                <p className='text-5xl font-semibold tracking-tight leading-none'>Everything you need to run your books.</p>
+                <p className='text-base font-normal leading-normal text-white/80'>Well everything you need if you aren’t that picky about minor details like tax compliance.</p>
             </div>
-            <div className='flex flex-row pl-20 mt-20 w-full justify-between space-x-20'>
-                <div className='flex flex-col space-y-3'>
+            <div className='flex w-full justify-between gap-56'>
+                <div className='flex flex-col gap-3'>
                     {featureList.map((_payroll, idx) => {
                         return (
-                            <div className='text-white p-6 box-border rounded-xl h-32 w-[493px] hover:bg-white/10 hover:border hover:border-white/25' key={idx}>
+                            <div className='text-white p-6 box-border rounded-xl h-32 w-full hover:bg-white/10 hover:border hover:border-white/25' key={idx}>
                                 <p className='text-xl font-medium leading-6 tracking-[-0.02rem]'>{_payroll.title}</p>
-                                <p className='text-sm font-normal leading-normal tracking-[-0.01rem]'>{_payroll.description}</p>
+                                <p className='text-sm font-normal leading-normal tracking-[-0.01rem] break-words'>{_payroll.description}</p>
                             </div>
                         )
                     })}

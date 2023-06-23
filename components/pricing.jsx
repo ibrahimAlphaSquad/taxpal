@@ -51,7 +51,10 @@ function Pricing() {
     return (
         <div id='pricing' className='flex flex-col justify-center items-center space-y-[77px] py-[118px] px-[250px] bg-[#10172A]'>
             <div className='text-white flex flex-col justify-center items-center'>
-                <h1 className='lexend-font text-4xl leading-[81px] -tracking-[0.76px]'>Simple pricing, for everyone.</h1>
+                <div className='relative'>
+                    <h1 className='lexend-font text-4xl leading-[81px] -tracking-[0.76px] z-10'>Simple pricing, for everyone.</h1>
+                    <Image className='absolute top-[25px] -left-1' src={"assets/svg/marker-2.svg"} alt='marker-2' width={280.083} height={39.836} />
+                </div>
                 <p className='text-base leading-[30px] -tracking-[0.17px] text-white opacity-60'>It doesn’t matter what size your business is, our software won’t work well for you.</p>
             </div>
             <div className='flex justify-center items-center space-x-8'>
@@ -63,7 +66,7 @@ function Pricing() {
                                 <p className='lexend-font text-lg -tracking-[0.54px] font-medium mb-3'>{_price.title}</p>
                                 <p className='text-base leading-[29px] -tracking-[0.3px] mb-7'>{_price.description}</p>
                                 <button className={`${selectedPlan === _price.price ? "bg-white text-black" : " border border-white/80"} px-4 py-3 w-full rounded-[50px] mb-9`}>{_price.cta}</button>
-                                <div className=' h-full max-h-60'>
+                                <div className='h-full max-h-60'>
                                     {
                                         _price.benfits.map((_benfit, idx2) => {
                                             return (
